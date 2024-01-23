@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- AdminLTE -->
+		<link rel="stylesheet" href="css/adminlte.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+    <title>eRuang - NF</title>
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+	<div class="wrapper">
+
+		<!-- Main Sidebar Container -->
+		<aside class="main-sidebar sidebar-dark-primary elevation-4">
+			<!-- Brand Logo -->
+			<a href="index3.html" class="brand-link">
+				<span class="brand-text font-weight-light">eRuang</span>
+			</a>
+	
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+					<div class="image">
+						<img src="assets/admin.png" class="img-circle elevation-2" alt="User Image">
+					</div>
+					<div class="info">
+						<a href="#" class="d-block">Admin</a>
+					</div>
+				</div>
+	
+				<!-- SidebarSearch Form -->
+				<div class="form-inline">
+					<div class="input-group" data-widget="sidebar-search">
+						<input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn btn-sidebar">
+								<i class="fas fa-search fa-fw"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Sidebar Menu -->
+				<nav class="mt-2">
+					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+						<!-- Add icons to the links using the .nav-icon class
+									with font-awesome or any other icon font library -->
+						<li class="nav-item menu-open">
+							<ul class="nav nav-treeview">
+								<li class="nav-item">
+									<a href="admin-ruangan.html" class="nav-link active">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Ruangan</p>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="admin-peminjam.html" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Peminjam</p>
+									</a>
+								</li>
+								<li class="nav-item border-bottom">
+									<a href="admin-jadwal.html" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Jadwal</p>
+									</a>
+								</li>
+								<li class="nav-item mt-4">
+									<a href="index.html" class="nav-link bg-danger">
+									  <i class="nav-icon fa fa-sign-out-alt"></i>
+									  <p class="text">Logout</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		 <!-- Content Wrapper. Contains page content -->
+		 <div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<div class="content-header">
+				<div class="container-fluid">
+					<div class="row mb-2">
+						<div class="col-sm-7">
+							<h1 class="m-0">Admin eRuang</h1>
+							<h4>Sistem Peminjaman Ruangan Nurul Fikri</h2>
+						</div><!-- /.col -->
+						<div class="col-sm-5">
+							<ol class="breadcrumb float-sm-right">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Admin</a></li>
+								<li class="breadcrumb-item active">Kelola Ruangan</li>
+							</ol>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.container-fluid -->
+			</div>
+			<!-- /.content-header -->
+	
+			<!-- Main content -->
+			<section class="content">
+				<div class="container-fluid">
+					<!-- Main row -->
+					<div class="row">
+						<div class="card-body table-responsive p-0">
+							<div class="card card-primary">
+								<div class="card-header">
+									<h3 class="card-title">Kelola Ruangan</h3>
+								</div>
+								<!-- /.card-header -->
+								<!-- form start -->
+								<form action="admin-ruangan.html">
+									<div class="card-body">
+									<div class="form-group">
+										<label for="namaRuangan">Nama Ruangan</label>
+										<input type="text" class="form-control" id="namaRuangan" placeholder="Aula Utama">
+									</div>
+									<div class="form-group">
+										<label>Kategori</label>
+										<select class="form-control">
+										  <option selected disabled>Pilih:</option>
+										  <option>Aula</option>
+										  <option>Ballroom</option>
+										  <option>Kelas</option>
+										  <option>Laboratorium</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Deskripsi Ruangan</label>
+										<textarea class="form-control" rows="3" placeholder="Deskripsi"></textarea>
+									</div>
+									<div class="form-group">
+										<label>Fasilitas Ruangan</label>
+										<div class="d-flex">
+											<div class="form-check mr-4">
+												<input class="form-check-input" type="checkbox">
+												<label class="form-check-label">Sound System</label>
+											</div>
+											<div class="form-check mr-4">
+												<input class="form-check-input" type="checkbox">
+												<label class="form-check-label">Wifi</label>
+											</div>
+											<div class="form-check mr-4">
+												<input class="form-check-input" type="checkbox">
+												<label class="form-check-label">Layar Besar</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="kapasitas">Kapasitas</label>
+										<input type="text" class="form-control" id="kapasitas" placeholder="50 orang">
+									</div>
+									<div class="form-group">
+										<label for="lokasi">Lokasi Ruangan</label>
+										<input type="text" class="form-control" id="lokasi" placeholder="Jakarta">
+									</div>
+									</div>
+									<!-- /.card-body -->
+					
+									<div class="card-footer">
+										<button type="submit" class="btn btn-primary">Submit</button>
+										<button type="reset" class="btn btn-danger">Reset</button>
+									</div>
+								</form>
+							</div>
+							<!-- /.card -->
+						</div>
+						<!-- /.card-body -->
+					</div>
+					<!-- /.row (main row) -->
+				</div><!-- /.container-fluid -->
+			</section>
+			<!-- /.content -->
+		</div>
+
+		<footer class="main-footer">
+			Developed by Kelompok 3 - TI 07
+			&copy; 2024
+		</footer>
+	</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+		<!-- AdminLTE -->
+		<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  </body>
+</html>
